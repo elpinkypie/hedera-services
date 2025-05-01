@@ -6,6 +6,15 @@ plugins {
     id("org.hiero.gradle.feature.shadow")
 }
 
+dependencies {
+    // JUnit 5 Params for parameterized tests
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2")
+
+    // Mockito for mocking in tests
+    testImplementation("org.mockito:mockito-core:5.2.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:5.2.0")
+}
+
 description = "Hedera Services Test Clients for End to End Tests (EET)"
 
 mainModuleInfo {
