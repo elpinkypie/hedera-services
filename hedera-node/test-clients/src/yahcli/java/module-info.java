@@ -21,4 +21,5 @@ module com.hedera.node.test.clients.yahcli {
     // For test visibility
     opens com.hedera.services.yahcli to
             org.junit.platform.commons;
+    opens com.hedera.services.yahcli.tests to org.junit.platform.commons;
 }
